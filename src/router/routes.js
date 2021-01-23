@@ -5,9 +5,8 @@ const Routes = {
 	toLogin: () => '/login',
 	toSignUp: () => '/signup',
 	toOwnerSignUp: () => '/ownerSignUp',
-	//Buddy Routing
 
-	//Owner Routing
+	toBooking: () => '/bookSession',
 };
 
 export default Routes;

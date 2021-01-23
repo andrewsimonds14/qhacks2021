@@ -57,11 +57,8 @@ class RouterApp extends Component {
 			<Router>
 				<Switch>
 					{this.renderPublicRoute(Routes.toLanding(), LandingPage)}
-<<<<<<< HEAD
 					{this.renderPublicRoute(Routes.toLogin(), LoginPage)}
-=======
 					{this.renderPublicRoute(Routes.toSignUp(), SignUpPage)}
->>>>>>> 1001a3caa9dccbb721ac2230a1630aa173027e52
 				</Switch>
 			</Router>
 		);

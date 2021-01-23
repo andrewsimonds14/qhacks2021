@@ -16,10 +16,15 @@ class Search extends React.Component {
 	}
 
 render() {
+  const navToOwner = () => {
+    this.props.history.push(Routes.toLanding());
+  };
   return (
     <div>
     <h1>HELLO</h1>
-      <MapContainer></MapContainer>
+      <MapContainer 
+      navToOwner={navToOwner}
+      />
       </div>
   );
 }

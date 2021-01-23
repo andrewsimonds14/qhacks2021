@@ -17,7 +17,6 @@ class LandingPage extends React.Component {
 		return (
 			<Parent>
 				<NavBar />
-				<div>Hey</div>
 			</Parent>
 		);
 	}

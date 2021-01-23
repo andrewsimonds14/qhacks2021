@@ -36,7 +36,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const NavText = styled.div`
-	color: ${(props) => props.theme.colors.myPurple};
+	color: ${(props) => props.theme.colors.darkRed};
 	font-family: ${(props) => props.theme.fonts.familyHeader};
 	font-weight: ${(props) => props.theme.fonts.weightRegular};
 	font-size: 250%;

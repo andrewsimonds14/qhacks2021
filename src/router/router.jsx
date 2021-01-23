@@ -2,7 +2,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { LandingPage, SignUpPage, LoginPage, OwnerSignUpPage, BookSessions  } from '../views';
+import {
+	LandingPage,
+	SignUpPage,
+	LoginPage,
+	OwnerSignUpPage,
+	BookSessions,
+	BuddyDashboard,
+} from '../views';
 
 import Routes from './routes';
 
@@ -61,7 +68,7 @@ class RouterApp extends Component {
 					{this.renderPublicRoute(Routes.toSignUp(), SignUpPage)}
 					{this.renderPublicRoute(Routes.toOwnerSignUp(), OwnerSignUpPage)}
 					{this.renderPublicRoute(Routes.toBooking(), BookSessions)}
-
+					{this.renderPublicRoute(Routes.toBuddyDashboard(), BuddyDashboard)}
 				</Switch>
 			</Router>
 		);

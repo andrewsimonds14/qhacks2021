@@ -7,18 +7,18 @@ const Gym = ({ gym }) => {
     const classes = useStyles();
     return (
         <Card className={classes.root}> 
-            <CardMedia className={classes.media} image={gym.img} title={gym.name} />
+            <CardMedia className={classes.media} image={gym.img} title={gym.gymName} />
             <CardContent>
                 <div className ={classes.cardContent}>
                     <Typography variant="h5" gutterBottom>
-                        {gym.name}
+                        {gym.gymName}
                     </Typography>
                     <Typography variant="h5" gutterBottom>
-                        {gym.price}
+                        {gym.pricePerHour}
                     </Typography>
                 </div>
                 <Typography variant="body2" color="textSecondary">
-                    {gym.des}
+                    {gym.description}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions}>

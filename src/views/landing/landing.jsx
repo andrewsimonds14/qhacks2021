@@ -13,19 +13,19 @@ class LandingPage extends React.Component {
 		this.state = {};
 	}
 	render() {
-		const navToHostReg = () => {
-			this.props.history.push(Routes.toHostReg());
-		};
 		const navToSignUp = () => {
 			this.props.history.push(Routes.toSignUp());
 		};
 		const navToLogin = () => {
 			this.props.history.push(Routes.toLogin());
 		};
+		const navToOwnerSignUp = () => {
+			this.props.history.push(Routes.toOwnerSignUp());
+		};
 		return (
 			<Parent>
 				<NavBar
-					navToHostReg={navToHostReg}
+					navToOwnerSignUp={navToOwnerSignUp}
 					navToSignUp={navToSignUp}
 					navToLogin={navToLogin}
 				/>

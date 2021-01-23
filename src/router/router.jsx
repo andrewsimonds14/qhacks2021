@@ -7,7 +7,7 @@ import {
 	Redirect,
 } from 'react-router-dom';
 
-import { LandingPage } from '../views';
+import { LandingPage, LoginPage } from '../views';
 
 import Routes from './routes';
 
@@ -62,6 +62,7 @@ class RouterApp extends Component {
 			<Router>
 				<Switch>
 					{this.renderPublicRoute(Routes.toLanding(), LandingPage)}
+					{this.renderPublicRoute(Routes.toLogin(), LoginPage)}
 				</Switch>
 			</Router>
 		);

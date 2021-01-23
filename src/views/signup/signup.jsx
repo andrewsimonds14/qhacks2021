@@ -4,6 +4,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
 
+import { NavBar } from '../../shared';
+
 import {
 	Parent,
 	Title,
@@ -22,8 +24,22 @@ class SignUpPage extends React.Component {
 	}
 	render() {
 		const emailTest = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+		const navToSignUp = () => {
+			this.props.history.push(Routes.toSignUp());
+		};
+		const navToLogin = () => {
+			this.props.history.push(Routes.toLogin());
+		};
+		const navToOwnerSignUp = () => {
+			this.props.history.push(Routes.toOwnerSignUp());
+		};
 		return (
 			<Parent>
+				<NavBar
+					navToOwnerSignUp={navToOwnerSignUp}
+					navToSignUp={navToSignUp}
+					navToLogin={navToLogin}
+				/>
 				<Title>Become a Workout Buddy Today!</Title>
 				<SignUpContainer>
 					<SquatImage src={squatMan}></SquatImage>

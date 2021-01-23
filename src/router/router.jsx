@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { LandingPage, SignUpPage } from '../views';
+import { LandingPage, SignUpPage, LoginPage } from '../views';
 
 import Routes from './routes';
 
@@ -57,6 +57,7 @@ class RouterApp extends Component {
 			<Router>
 				<Switch>
 					{this.renderPublicRoute(Routes.toLanding(), LandingPage)}
+					{this.renderPublicRoute(Routes.toLogin(), LoginPage)}
 					{this.renderPublicRoute(Routes.toSignUp(), SignUpPage)}
 				</Switch>
 			</Router>

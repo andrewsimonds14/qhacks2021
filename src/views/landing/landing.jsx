@@ -34,6 +34,7 @@ class LandingPage extends React.Component {
 						<MainText>A whole Gym, all to yourself</MainText>
 					</TitleTextWrapper>
 				</BackgroundImage>
+				
 			</Parent>
 		);
 	}

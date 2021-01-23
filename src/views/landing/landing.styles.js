@@ -40,3 +40,4 @@ export const MainText = styled.div`
 	font-weight: ${(props) => props.theme.fonts.weightHeavy};
     font-size: 400%;
 `;
+

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
 
-import { NavBar, Footer, Bookings } from '../../../shared';
+import { NavBar, Footer, Sessions } from '../../../shared';
 
 import {
 	Parent,
@@ -47,13 +47,7 @@ class OwnerDashboard extends React.Component {
 					<Title>{`Hey ${this.props.ownerName}, how's the gym?`}</Title>
 				</WelcomeMessage>
 				<SubTitle dark>{`${this.props.gymName} | Upcoming Bookings`}</SubTitle>
-				<Bookings />
-				<SubTitle>Ready to find your next lift?</SubTitle>
-				<ButtonWrapper
-					onClick={() => this.props.history.push(Routes.toBuddySearch())}
-				>
-					<AwesomeButton>Let's go!</AwesomeButton>
-				</ButtonWrapper>
+				<Sessions />
 
 				<Footer />
 			</Parent>

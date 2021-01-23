@@ -38,11 +38,7 @@ class LandingPage extends React.Component {
 					navToLogin={navToLogin}
 					navToLanding={navToLanding}
 				/>
-				<BackgroundImage background={flagShipImg}>
-					<TitleTextWrapper>
-						<MainText>A whole Gym, all to yourself</MainText>
-					</TitleTextWrapper>
-				</BackgroundImage>
+				<BackgroundImage background={flagShipImg} />
 				<Footer landing />
 			</Parent>
 		);

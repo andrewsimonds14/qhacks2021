@@ -3,10 +3,10 @@ import styled, { css } from 'styled-components';
 export const TopBar = styled.div`
 	width: 100%;
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
-    padding: 0.25em 0;
+	padding: 0.25em 0;
 	position: fixed;
 	z-index: 10;
 
@@ -28,10 +28,11 @@ export const TextWrapper = styled.div`
 	align-items: center;
 	padding: 0 0.5em;
 	width: 50%;
-	${(props) => props.logo
-		&& css`
+	${(props) =>
+		props.logo &&
+		css`
 			justify-content: flex-start;
-        `}
+		`}
 `;
 
 export const NavText = styled.div`
@@ -40,8 +41,9 @@ export const NavText = styled.div`
 	font-weight: ${(props) => props.theme.fonts.weightRegular};
 	font-size: 250%;
 	padding: 0 0.5em;
-	${(props) => props.logo
-		&& css`
+	${(props) =>
+		props.logo &&
+		css`
 			font-size: 300%;
-        `}
+		`}
 `;

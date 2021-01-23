@@ -33,6 +33,10 @@ const Colors = {
 	lightRed: '#FF8686',
 	red: '#FE4141',
 	darkRed: '#D93838',
+
+	myPurple: '#a5b0fe',
+	myDarkPurple: '#7d8dff',
+	myVeryDarkPurple: '#3847b0',
 };
 
 export { Colors };

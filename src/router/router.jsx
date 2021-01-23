@@ -7,9 +7,7 @@ import {
 	Redirect,
 } from 'react-router-dom';
 
-import {
-	LandingPage,
-} from '../views';
+import { LandingPage } from '../views';
 
 import Routes from './routes';
 
@@ -63,13 +61,6 @@ class RouterApp extends Component {
 		return (
 			<Router>
 				<Switch>
-					<Route
-						exact
-						path='/'
-						render={() => {
-							return <Redirect to='/' />;
-						}}
-					/>
 					{this.renderPublicRoute(Routes.toLanding(), LandingPage)}
 				</Switch>
 			</Router>

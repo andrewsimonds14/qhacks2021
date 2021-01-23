@@ -7,7 +7,7 @@ export const Parent = styled.div`
 	justify-content: space-evenly;
 `;
 export const BackgroundImage = styled.div`
-	margin-top: 7em;
+	margin-top: 100px;
 	display: block;
 	background-position: center;
 	background-size: cover;

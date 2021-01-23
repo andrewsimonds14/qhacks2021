@@ -4,7 +4,7 @@ import { withTheme } from 'styled-components';
 import { NavBar, Footer } from '../../shared';
 
 import { BackgroundImage, Parent } from './landing.styles';
-import flagShipImg from '../../assets/Garage-Gym.jpg';
+import flagShipImg from '../../assets/Garage-Gym.png';
 import Routes from '../../router/routes';
 
 class LandingPage extends React.Component {

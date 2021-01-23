@@ -42,7 +42,7 @@ const NavBar = (props) => (
 					<NavText small onClick={() => props.navToAccount()}>
 						Account
 					</NavText>
-					<NavText onClick={() => props.navToLogin()}>Logout</NavText>
+					<NavText onClick={() => props.navToLanding()}>Logout</NavText>
 				</TextWrapper>
 			</TopBar>
 		)}

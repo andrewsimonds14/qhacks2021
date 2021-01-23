@@ -65,9 +65,8 @@ class LoginPage extends React.Component {
 								}
 								return errors;
 							}}
-							onSubmit={({ setSubmitting }) => {
-								alert('Form is validated! Submitting the form...');
-								setSubmitting(false);
+							onSubmit={() => {
+								this.props.history.push(Routes.toBuddyDashboard());
 							}}
 						>
 							{({ touched, errors, isSubmitting }) => (

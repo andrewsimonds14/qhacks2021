@@ -53,13 +53,16 @@ const NavBar = (props) => (
 					<NavText logo>QuickFit</NavText>
 				</TextWrapper>
 				<TextWrapper>
-					<NavText small onClick={() => props.navToOwnerSignUp()}>
-						Become a host
+					<NavText small onClick={() => props.navToDashboard()}>
+						Dashboard
 					</NavText>
-					<NavText small onClick={() => props.navToSignUp()}>
-						Sign Up
+					<NavText small onClick={() => props.navToEditGym()}>
+						Edit Gym
 					</NavText>
-					<NavText onClick={() => props.navToLogin()}>Login</NavText>
+					<NavText small onClick={() => props.navToAccount()}>
+						Account
+					</NavText>
+					<NavText onClick={() => props.navToLanding()}>Logout</NavText>
 				</TextWrapper>
 			</TopBar>
 		)}

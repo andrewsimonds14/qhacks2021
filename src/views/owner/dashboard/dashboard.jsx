@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
 
-import { NavBar, Footer, Bookings, PastBookings } from '../../../shared';
+import { NavBar, Footer, Bookings } from '../../../shared';
 
 import {
 	Parent,
@@ -15,20 +15,20 @@ import {
 } from './dashboard.styles';
 import Routes from '../../../router/routes';
 
-class BuddyDashboard extends React.Component {
+class OwnerDashboard extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
 	}
 	render() {
-		const navToSearch = () => {
-			this.props.history.push(Routes.toBuddySearch());
+		const navToEditGym = () => {
+			this.props.history.push(Routes.toEditGym());
 		};
 		const navToAccount = () => {
-			this.props.history.push(Routes.toBuddyAccount());
+			this.props.history.push(Routes.toOwnerAccount());
 		};
 		const navToDashboard = () => {
-			this.props.history.push(Routes.toBuddyDashboard());
+			this.props.history.push(Routes.toOwnerDashboard());
 		};
 		const navToLanding = () => {
 			this.props.history.push(Routes.toLanding());
@@ -37,19 +37,17 @@ class BuddyDashboard extends React.Component {
 		return (
 			<Parent>
 				<NavBar
-					buddyLoggedIn
-					navToSearch={navToSearch}
+					ownerLoggedIn
+					navToEditGym={navToEditGym}
 					navToAccount={navToAccount}
 					navToDashboard={navToDashboard}
 					navToLanding={navToLanding}
 				/>
 				<WelcomeMessage>
-					<Title>{`Hey ${this.props.userName}, ready to get fit?`}</Title>
+					<Title>{`Hey ${this.props.ownerName}, how's the gym?`}</Title>
 				</WelcomeMessage>
-				<SubTitle>Upcoming Workouts</SubTitle>
+				<SubTitle dark>{`${this.props.gymName} | Upcoming Bookings`}</SubTitle>
 				<Bookings />
-				<SubTitle>Past Workouts</SubTitle>
-				<PastBookings />
 				<SubTitle>Ready to find your next lift?</SubTitle>
 				<ButtonWrapper
 					onClick={() => this.props.history.push(Routes.toBuddySearch())}
@@ -64,7 +62,8 @@ class BuddyDashboard extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-	userName: state.reducer.userList.buddies[0].name,
+	gymName: state.reducer.userList.owners[0].gymName,
+	ownerName: state.reducer.userList.owners[0].name,
 });
 
-export default connect(mapStateToProps)(withTheme(BuddyDashboard));
+export default connect(mapStateToProps)(withTheme(OwnerDashboard));

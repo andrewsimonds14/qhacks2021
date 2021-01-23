@@ -10,3 +10,4 @@ export { default as BookSessions } from './buddy/bookSession/bookSession';
 export { default as BuddySearch } from './buddy/search/search';
 
 //Owner Stuff
+export { default as OwnerDashboard } from './owner/dashboard/dashboard';

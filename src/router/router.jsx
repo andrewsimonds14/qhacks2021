@@ -10,6 +10,7 @@ import {
 	BookSessions,
 	BuddyDashboard,
 	BuddySearch,
+	OwnerDashboard,
 } from '../views';
 
 import Routes from './routes';
@@ -71,6 +72,7 @@ class RouterApp extends Component {
 					{this.renderPublicRoute(Routes.toBooking(), BookSessions)}
 					{this.renderPublicRoute(Routes.toBuddySearch(), BuddySearch)}
 					{this.renderPublicRoute(Routes.toBuddyDashboard(), BuddyDashboard)}
+					{this.renderPublicRoute(Routes.toOwnerDashboard(), OwnerDashboard)}
 				</Switch>
 			</Router>
 		);

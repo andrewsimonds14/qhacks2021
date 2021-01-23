@@ -10,8 +10,10 @@ const Routes = {
 	toBuddySearch: () => '/buddySearch',
 	toBuddyAccount: () => '/buddyAccount',
 	toBooking: () => '/bookSession',
-	toSearch: () => '/search',
 	//Owner Routes
+	toOwnerDashboard: () => '/ownerDashboard',
+	toEditGym: () => '/editGym',
+	toOwnerAccount: () => '/ownerAccount',
 };
 
 export default Routes;

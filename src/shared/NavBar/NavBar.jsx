@@ -15,7 +15,7 @@ const NavBar = (props) => (
 			<NavText logo>QuickFit</NavText>
 		</TextWrapper>
 		<TextWrapper>
-			<NavText small onClick={() => props.navToHostReg()}>
+			<NavText small onClick={() => props.navToOwnerSignUp()}>
 				Become a host
 			</NavText>
 			<NavText small onClick={() => props.navToSignUp()}>

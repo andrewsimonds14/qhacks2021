@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/quickfit.tech/static/js/main.f75c4440.chunk.js",
+    "main.js.map": "/quickfit.tech/static/js/main.f75c4440.chunk.js.map",
+    "runtime-main.js": "/quickfit.tech/static/js/runtime-main.1950faf9.js",
+    "runtime-main.js.map": "/quickfit.tech/static/js/runtime-main.1950faf9.js.map",
+    "static/js/2.e193cafa.chunk.js": "/quickfit.tech/static/js/2.e193cafa.chunk.js",
+    "static/js/2.e193cafa.chunk.js.map": "/quickfit.tech/static/js/2.e193cafa.chunk.js.map",
+    "index.html": "/quickfit.tech/index.html",
+    "static/js/2.e193cafa.chunk.js.LICENSE.txt": "/quickfit.tech/static/js/2.e193cafa.chunk.js.LICENSE.txt",
+    "static/media/Garage-Gym.eccb60cd.jpg": "/quickfit.tech/static/media/Garage-Gym.eccb60cd.jpg",
+    "static/media/dumbbell.02969ce7.svg": "/quickfit.tech/static/media/dumbbell.02969ce7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1950faf9.js",
+    "static/js/2.e193cafa.chunk.js",
+    "static/js/main.f75c4440.chunk.js"
+  ]
+}

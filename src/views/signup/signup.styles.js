@@ -20,7 +20,6 @@ export const Title = styled.div`
 export const SignUpContainer = styled.div`
 	background-color: ${(props) => props.theme.colors.elevatedBackgroundPrimary};
 	border: 4px solid ${(props) => props.theme.colors.darkRed};
-	border-radius: 0.5em;
 
 	display: flex;
 	flex-direction: row;

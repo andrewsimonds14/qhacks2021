@@ -1,7 +1,7 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
 
-import { NavBar } from '../../shared';
+import { NavBar, Footer } from '../../shared';
 
 import {
 	BackgroundImage,
@@ -43,6 +43,7 @@ class LandingPage extends React.Component {
 						<MainText>A whole Gym, all to yourself</MainText>
 					</TitleTextWrapper>
 				</BackgroundImage>
+				<Footer landing />
 			</Parent>
 		);
 	}

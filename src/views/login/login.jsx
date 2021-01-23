@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
 
-import { NavBar } from '../../shared';
+import { NavBar, Footer } from '../../shared';
 
 import {
 	Parent,
@@ -121,6 +121,7 @@ class LoginPage extends React.Component {
 						</Formik>
 					</SignUpFormWrapper>
 				</SignUpContainer>
+				<Footer />
 			</Parent>
 		);
 	}

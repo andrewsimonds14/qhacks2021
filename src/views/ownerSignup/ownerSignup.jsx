@@ -3,16 +3,18 @@ import { withTheme } from 'styled-components';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
+import { NavBar } from '../../shared';
+
 
 import {
 	Parent,
 	Title,
-	SignUpContainer,
+	OwnerSignUpContainer,
 	SquatImage,
-	SignUpFormWrapper,
-	SignUpText,
+	OwnerSignUpFormWrapper,
+	OwnerSignUpText,
 } from './ownerSignup.styles';
-import squatMan from '../../assets/squatMan.png';
+import Squat from '../../assets/Squat.png';
 import Routes from '../../router/routes';
 
 class OwnerSignUpPage extends React.Component {
@@ -23,12 +25,30 @@ class OwnerSignUpPage extends React.Component {
 
 	render() {
 		const emailTest = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+		const navToSignUp = () => {
+			this.props.history.push(Routes.toSignUp());
+		};
+		const navToLogin = () => {
+			this.props.history.push(Routes.toLogin());
+		};
+		const navToOwnerSignUp = () => {
+			this.props.history.push(Routes.toOwnerSignUp());
+		};
+		const navToLanding = () => {
+			this.props.history.push(Routes.toLanding());
+		};
 		return (
 			<Parent>
-				<Title>Become a Workout Buddy Today!</Title>
-				<SignUpContainer>
-					<SquatImage src={squatMan}></SquatImage>
-					<SignUpFormWrapper>
+				<NavBar
+					navToOwnerSignUp={navToOwnerSignUp}
+					navToSignUp={navToSignUp}
+					navToLogin={navToLogin}
+					navToLanding={navToLanding}
+				/>
+				<Title>Become a QuickFit Host Today!</Title>
+				<OwnerSignUpContainer>
+					<SquatImage src={Squat}></SquatImage>
+					<OwnerSignUpFormWrapper>
 						<Formik
 							initialValues={{ email: '', password: '' }}
 							validate={(values) => {
@@ -51,9 +71,53 @@ class OwnerSignUpPage extends React.Component {
 							}}
 						>
 							{({ touched, errors, isSubmitting }) => (
-								<Form>
+								
+                
+                
+                <Form>
 									<div className='form-group'>
-										<SignUpText htmlFor='email'>Email</SignUpText>
+										<OwnerSignUpText htmlFor='email'>Name</OwnerSignUpText>
+										<Field
+											type='name'
+											name='name'
+											placeholder='Enter name'
+											className={`form-control ${
+												touched.password && errors.password ? 'is-invalid' : ''
+											}`}
+										/>
+									</div>
+                  
+                  <div className='form-group'>
+										<OwnerSignUpText htmlFor='email'>Address</OwnerSignUpText>
+										<Field
+											type='name'
+											name='name'
+                      placeholder='Street name'
+                      
+											className={`form-control ${
+												touched.password && errors.password ? 'is-invalid' : ''
+											}`}
+										/><br />
+                    <Field
+											type='name'
+											name='name'
+											placeholder='Postal Code'
+											className={`form-control ${
+												touched.password && errors.password ? 'is-invalid' : ''
+											}`}
+										/><br />
+                    <Field
+											type='name'
+											name='name'
+											placeholder='Province'
+											className={`form-control ${
+												touched.password && errors.password ? 'is-invalid' : ''
+											}`}
+										/>
+									</div>
+									
+                  <div className='form-group'>
+										<OwnerSignUpText htmlFor='email'>Email</OwnerSignUpText>
 										<Field
 											type='email'
 											name='email'
@@ -70,7 +134,7 @@ class OwnerSignUpPage extends React.Component {
 									</div>
 
 									<div className='form-group'>
-										<SignUpText htmlFor='password'>Password</SignUpText>
+										<OwnerSignUpText htmlFor='password'>Password</OwnerSignUpText>
 										<Field
 											type='password'
 											name='password'
@@ -100,8 +164,9 @@ class OwnerSignUpPage extends React.Component {
 								</Form>
 							)}
 						</Formik>
-					</SignUpFormWrapper>
-				</SignUpContainer>
+					</OwnerSignUpFormWrapper>
+          
+				</OwnerSignUpContainer>
 			</Parent>
 		);
 	}

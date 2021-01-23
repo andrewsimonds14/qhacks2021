@@ -11,40 +11,41 @@ export const Title = styled.div`
 	color: ${(props) => props.theme.colors.red};
 	font-family: ${(props) => props.theme.fonts.familyHeader};
 	font-weight: ${(props) => props.theme.fonts.weightStrong};
-	padding: 0.6em 0.5em;
+	padding: 0.25em 0.5em;
+	margin-top: 1.6em;
 	font-size: 300%;
 	align-self: center;
 `;
 
-export const SignUpContainer = styled.div`
+export const OwnerSignUpContainer = styled.div`
 	background-color: ${(props) => props.theme.colors.elevatedBackgroundPrimary};
 	border: 4px solid ${(props) => props.theme.colors.darkRed};
 	border-radius: 0.5em;
 
 	display: flex;
 	flex-direction: row;
-	align-items: speac-evenly; //Perpendicular to flex direction
+	align-items: space-evenly; //Perpendicular to flex direction
 	justify-content: flex-start; //Along flex direction
 `;
 
 export const SquatImage = styled.img`
-	width: 50%;
+	width: 70%;
 	display: block;
 `;
 
-export const SignUpFormWrapper = styled.div`
+export const OwnerSignUpFormWrapper = styled.div`
 	width: 50%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center; //Perpendicular to flex direction
 	justify-content: center; //Along flex direction
 `;
 
-export const SignUpText = styled.div`
+export const OwnerSignUpText = styled.div`
 	color: ${(props) => props.theme.colors.darkRed};
 	font-family: ${(props) => props.theme.fonts.familyHeader};
 	font-weight: ${(props) => props.theme.fonts.weightMedium};
 	padding: 0.6em 0.5em;
 	font-size: 200%;
-	align-self: center;
+  align-self: center;
 `;

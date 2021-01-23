@@ -39,12 +39,13 @@ class OwnerSignUpPage extends React.Component {
 		return (
 			<Parent>
 				<NavBar
+					default
 					navToOwnerSignUp={navToOwnerSignUp}
 					navToSignUp={navToSignUp}
 					navToLogin={navToLogin}
 					navToLanding={navToLanding}
 				/>
-				<Title>Become a QuickFit Host Today!</Title>
+				<Title>Become a QuickFit Host!</Title>
 				<OwnerSignUpContainer>
 					<SquatImage src={Squat}></SquatImage>
 					<OwnerSignUpFormWrapper>

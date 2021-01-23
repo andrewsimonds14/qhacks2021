@@ -33,12 +33,16 @@ class SignUpPage extends React.Component {
 		const navToOwnerSignUp = () => {
 			this.props.history.push(Routes.toOwnerSignUp());
 		};
+		const navToLanding = () => {
+			this.props.history.push(Routes.toLanding());
+		};
 		return (
 			<Parent>
 				<NavBar
 					navToOwnerSignUp={navToOwnerSignUp}
 					navToSignUp={navToSignUp}
 					navToLogin={navToLogin}
+					navToLanding={navToLanding}
 				/>
 				<Title>Become a Workout Buddy Today!</Title>
 				<SignUpContainer>
@@ -67,6 +71,17 @@ class SignUpPage extends React.Component {
 						>
 							{({ touched, errors, isSubmitting }) => (
 								<Form>
+									<div className='form-group'>
+										<SignUpText htmlFor='email'>Name</SignUpText>
+										<Field
+											type='name'
+											name='name'
+											placeholder='Enter name'
+											className={`form-control ${
+												touched.password && errors.password ? 'is-invalid' : ''
+											}`}
+										/>
+									</div>
 									<div className='form-group'>
 										<SignUpText htmlFor='email'>Email</SignUpText>
 										<Field

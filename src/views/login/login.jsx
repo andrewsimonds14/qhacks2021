@@ -4,6 +4,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
 
+import { NavBar } from '../../shared';
+
 import {
 	Parent,
 	Title,
@@ -12,7 +14,7 @@ import {
 	SignUpFormWrapper,
 	SignUpText,
 } from './login.styles';
-import squatMan from '../../assets/squatMan.png';
+import loginMan from '../../assets/loginWorkout.jpg';
 import Routes from '../../router/routes';
 
 class LoginPage extends React.Component {
@@ -22,11 +24,29 @@ class LoginPage extends React.Component {
 	}
 	render() {
 		const emailTest = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+		const navToSignUp = () => {
+			this.props.history.push(Routes.toSignUp());
+		};
+		const navToLogin = () => {
+			this.props.history.push(Routes.toLogin());
+		};
+		const navToOwnerSignUp = () => {
+			this.props.history.push(Routes.toOwnerSignUp());
+		};
+		const navToLanding = () => {
+			this.props.history.push(Routes.toLanding());
+		};
 		return (
 			<Parent>
+				<NavBar
+					navToOwnerSignUp={navToOwnerSignUp}
+					navToSignUp={navToSignUp}
+					navToLogin={navToLogin}
+					navToLanding={navToLanding}
+				/>
 				<Title>Login to your QuickFit Account!</Title>
 				<SignUpContainer>
-					<SquatImage src={squatMan}></SquatImage>
+					<SquatImage src={loginMan}></SquatImage>
 					<SignUpFormWrapper>
 						<Formik
 							initialValues={{ email: '', password: '' }}

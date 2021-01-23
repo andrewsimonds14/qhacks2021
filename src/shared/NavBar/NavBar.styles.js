@@ -19,6 +19,7 @@ export const TopBar = styled.div`
 
 export const LogoWrapper = styled.img`
 	width: 10%;
+	cursor: pointer;
 `;
 
 export const TextWrapper = styled.div`
@@ -51,6 +52,5 @@ export const NavText = styled.div`
 		css`
 			font-size: 150%;
 		`}
+	cursor: pointer;
 `;
-
-

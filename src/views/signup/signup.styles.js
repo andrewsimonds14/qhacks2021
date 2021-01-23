@@ -11,7 +11,8 @@ export const Title = styled.div`
 	color: ${(props) => props.theme.colors.red};
 	font-family: ${(props) => props.theme.fonts.familyHeader};
 	font-weight: ${(props) => props.theme.fonts.weightStrong};
-	padding: 0.6em 0.5em;
+	padding: 0.25em 0.5em;
+	margin-top: 1.6em;
 	font-size: 300%;
 	align-self: center;
 `;
@@ -23,7 +24,7 @@ export const SignUpContainer = styled.div`
 
 	display: flex;
 	flex-direction: row;
-	align-items: speac-evenly; //Perpendicular to flex direction
+	align-items: space-evenly; //Perpendicular to flex direction
 	justify-content: flex-start; //Along flex direction
 `;
 

@@ -3,7 +3,12 @@ import { withTheme } from 'styled-components';
 
 import { NavBar } from '../../shared';
 
-import { BackgroundImage, Parent, MainText, TitleTextWrapper } from './landing.styles';
+import {
+	BackgroundImage,
+	Parent,
+	MainText,
+	TitleTextWrapper,
+} from './landing.styles';
 import flagShipImg from '../../assets/Garage-Gym.jpg';
 import Routes from '../../router/routes';
 
@@ -22,19 +27,22 @@ class LandingPage extends React.Component {
 		const navToOwnerSignUp = () => {
 			this.props.history.push(Routes.toOwnerSignUp());
 		};
+		const navToLanding = () => {
+			this.props.history.push(Routes.toLanding());
+		};
 		return (
 			<Parent>
 				<NavBar
 					navToOwnerSignUp={navToOwnerSignUp}
 					navToSignUp={navToSignUp}
 					navToLogin={navToLogin}
+					navToLanding={navToLanding}
 				/>
 				<BackgroundImage background={flagShipImg}>
-					<TitleTextWrapper> 
+					<TitleTextWrapper>
 						<MainText>A whole Gym, all to yourself</MainText>
 					</TitleTextWrapper>
 				</BackgroundImage>
-				
 			</Parent>
 		);
 	}

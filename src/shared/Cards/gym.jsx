@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton} from '@material-ui/core';
-import { AddShoppingCart } from '@material-ui/icons';
+import { AwesomeButton } from 'react-awesome-button';
 import useStyles from './gyms.styles.js';
 
 const Gym = ({ gym }) => {
@@ -23,7 +23,7 @@ const Gym = ({ gym }) => {
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions}>
                 <IconButton aria-label="Add to Cart">
-
+                    
                 </IconButton>
             </CardActions>
         </Card>

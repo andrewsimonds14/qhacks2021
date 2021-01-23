@@ -4,7 +4,9 @@ const Routes = {
 	//Login + SignUp
 	toLogin: () => '/login',
 	toSignUp: () => '/signup',
-	toOwnerSignUp: () => '/ownerSignUp'
+	toOwnerSignUp: () => '/ownerSignUp',
+
+	toBooking: () => '/bookSession'
 };
 
 export default Routes;

@@ -3,7 +3,7 @@ import { withTheme } from 'styled-components';
 
 import { NavBar } from '../../shared';
 
-import { Parent } from './landing.styles';
+import { BackgroundImage, Parent, MainText, TitleTextWrapper } from './landing.styles';
 import flagShipImg from '../../assets/Garage-Gym.jpg';
 import Routes from '../../router/routes';
 
@@ -29,7 +29,11 @@ class LandingPage extends React.Component {
 					navToSignUp={navToSignUp}
 					navToLogin={navToLogin}
 				/>
-				<img src={flagShipImg} width='100%' height='80%' alt='Garage Gym' />
+				<BackgroundImage background={flagShipImg}>
+					<TitleTextWrapper> 
+						<MainText>A whole Gym, all to yourself</MainText>
+					</TitleTextWrapper>
+				</BackgroundImage>
 			</Parent>
 		);
 	}

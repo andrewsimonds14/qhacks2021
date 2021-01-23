@@ -5,3 +5,5 @@ export { default as LoginPage } from './login/login';
 export { default as SignUpPage } from './signup/signup';
 export { default as OwnerSignUpPage } from './ownerSignup/ownerSignup';
 export { default as BookSessions } from './buddy/bookSession/bookSession';
+export { default as Search } from './buddy/search/search';
+

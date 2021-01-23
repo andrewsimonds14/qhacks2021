@@ -14,7 +14,7 @@ const Session = ({ session }) => {
                         {session.name}
                     </Typography>
                     <Typography variant="h5" gutterBottom>
-                        {session.price}
+                        Charged: ${session.price}
                     </Typography>
                 </div>
                 <div className ={classes.cardContent}>

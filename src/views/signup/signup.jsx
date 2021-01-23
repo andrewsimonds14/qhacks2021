@@ -39,6 +39,7 @@ class SignUpPage extends React.Component {
 		return (
 			<Parent>
 				<NavBar
+					default
 					navToOwnerSignUp={navToOwnerSignUp}
 					navToSignUp={navToSignUp}
 					navToLogin={navToLogin}

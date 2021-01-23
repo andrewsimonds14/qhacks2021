@@ -5,8 +5,12 @@ const Routes = {
 	toLogin: () => '/login',
 	toSignUp: () => '/signup',
 	toOwnerSignUp: () => '/ownerSignUp',
-
+	//Buddy Routes
+	toBuddyDashboard: () => '/buddyDashboard',
+	toBuddySearch: () => '/buddySearch',
+	toBuddyAccount: () => '/buddyAccount',
 	toBooking: () => '/bookSession',
+	//Owner Routes
 };
 
 export default Routes;

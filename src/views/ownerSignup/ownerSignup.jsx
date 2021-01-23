@@ -44,7 +44,7 @@ class OwnerSignUpPage extends React.Component {
 					navToLogin={navToLogin}
 					navToLanding={navToLanding}
 				/>
-				<Title>Become a QuickFit Host Today!</Title>
+				<Title>Become a QuickFit Host!</Title>
 				<OwnerSignUpContainer>
 					<SquatImage src={Squat}></SquatImage>
 					<OwnerSignUpFormWrapper>

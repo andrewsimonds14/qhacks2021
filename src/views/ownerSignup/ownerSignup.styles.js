@@ -20,7 +20,6 @@ export const Title = styled.div`
 export const OwnerSignUpContainer = styled.div`
 	background-color: ${(props) => props.theme.colors.elevatedBackgroundPrimary};
 	border: 4px solid ${(props) => props.theme.colors.darkRed};
-	border-radius: 0.5em;
 
 	display: flex;
 	flex-direction: row;
@@ -29,7 +28,7 @@ export const OwnerSignUpContainer = styled.div`
 `;
 
 export const SquatImage = styled.img`
-	width: 70%;
+	width: 50%;
 	display: block;
 `;
 
@@ -47,5 +46,5 @@ export const OwnerSignUpText = styled.div`
 	font-weight: ${(props) => props.theme.fonts.weightMedium};
 	padding: 0.6em 0.5em;
 	font-size: 200%;
-  align-self: center;
+	align-self: center;
 `;

@@ -3,12 +3,7 @@ import { withTheme } from 'styled-components';
 
 import { NavBar, Footer } from '../../shared';
 
-import {
-	BackgroundImage,
-	Parent,
-	MainText,
-	TitleTextWrapper,
-} from './landing.styles';
+import { BackgroundImage, Parent } from './landing.styles';
 import flagShipImg from '../../assets/Garage-Gym.jpg';
 import Routes from '../../router/routes';
 

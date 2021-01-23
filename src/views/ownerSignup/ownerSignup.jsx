@@ -3,8 +3,7 @@ import { withTheme } from 'styled-components';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
-import { NavBar } from '../../shared';
-
+import { NavBar, Footer } from '../../shared';
 
 import {
 	Parent,
@@ -71,10 +70,7 @@ class OwnerSignUpPage extends React.Component {
 							}}
 						>
 							{({ touched, errors, isSubmitting }) => (
-								
-                
-                
-                <Form>
+								<Form>
 									<div className='form-group'>
 										<OwnerSignUpText htmlFor='email'>Name</OwnerSignUpText>
 										<Field
@@ -86,27 +82,28 @@ class OwnerSignUpPage extends React.Component {
 											}`}
 										/>
 									</div>
-                  
-                  <div className='form-group'>
+
+									<div className='form-group'>
 										<OwnerSignUpText htmlFor='email'>Address</OwnerSignUpText>
 										<Field
 											type='name'
 											name='name'
-                      placeholder='Street name'
-                      
+											placeholder='Street name'
 											className={`form-control ${
 												touched.password && errors.password ? 'is-invalid' : ''
 											}`}
-										/><br />
-                    <Field
+										/>
+										<br />
+										<Field
 											type='name'
 											name='name'
 											placeholder='Postal Code'
 											className={`form-control ${
 												touched.password && errors.password ? 'is-invalid' : ''
 											}`}
-										/><br />
-                    <Field
+										/>
+										<br />
+										<Field
 											type='name'
 											name='name'
 											placeholder='Province'
@@ -115,8 +112,8 @@ class OwnerSignUpPage extends React.Component {
 											}`}
 										/>
 									</div>
-									
-                  <div className='form-group'>
+
+									<div className='form-group'>
 										<OwnerSignUpText htmlFor='email'>Email</OwnerSignUpText>
 										<Field
 											type='email'
@@ -134,7 +131,9 @@ class OwnerSignUpPage extends React.Component {
 									</div>
 
 									<div className='form-group'>
-										<OwnerSignUpText htmlFor='password'>Password</OwnerSignUpText>
+										<OwnerSignUpText htmlFor='password'>
+											Password
+										</OwnerSignUpText>
 										<Field
 											type='password'
 											name='password'
@@ -165,8 +164,8 @@ class OwnerSignUpPage extends React.Component {
 							)}
 						</Formik>
 					</OwnerSignUpFormWrapper>
-          
 				</OwnerSignUpContainer>
+				<Footer />
 			</Parent>
 		);
 	}

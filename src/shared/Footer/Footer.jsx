@@ -10,9 +10,10 @@ import {
 } from './Footer.styles';
 import { Facebook, Twitter, Snapchat, Twitch } from '../../assets';
 
-const dummyFunction = () => {
+/*const dummyFunction = () => {
 	console.log('Hi');
 };
+*/
 
 const Footer = (props) => (
 	<FooterWrap>

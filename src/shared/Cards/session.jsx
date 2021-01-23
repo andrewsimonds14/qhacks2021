@@ -7,7 +7,7 @@ const Session = ({ session }) => {
     const classes = useStyles();
     return (
         <Card className={classes.root}> 
-            <CardMedia className={classes.media} title={session.name} />
+            <CardMedia className={classes.media} image={session.img} title={session.name} />
             <CardContent>
                 <div className ={classes.cardContent}>
                     <Typography variant="h5" gutterBottom>

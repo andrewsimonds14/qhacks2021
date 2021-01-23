@@ -6,6 +6,7 @@ const initialState = {
 				name: 'Michael Kurdyla',
 				uid: '193c8f28-8536-4792-812c-70b1e1915ba8',
 				dateAccountCreated: '22/1/2021',
+				img: "https://media-exp1.licdn.com/dms/image/C4D03AQFLA1Hf8M-sLA/profile-displayphoto-shrink_800_800/0/1591143186571?e=1616630400&v=beta&t=HIH9MNUD-jzl_4d_FI60PY7PaH0wm5LdlSIVhoqa3kQ",
 				bookings: [
 					{
 						bid: '57ceee7d-71fc-4e20-b42b-8625547193e1',
@@ -86,6 +87,7 @@ const initialState = {
 						startTime: 1900,
 						timeDuration: 60,
 						price: 19.0,
+						img: "https://media-exp1.licdn.com/dms/image/C4D03AQFLA1Hf8M-sLA/profile-displayphoto-shrink_800_800/0/1591143186571?e=1616630400&v=beta&t=HIH9MNUD-jzl_4d_FI60PY7PaH0wm5LdlSIVhoqa3kQ",
 					},
 				],
 			},
@@ -107,6 +109,7 @@ const initialState = {
 						startTime: '1900',
 						timeDuration: '60',
 						price: '21.00',
+						img: "https://media-exp1.licdn.com/dms/image/C4D03AQFLA1Hf8M-sLA/profile-displayphoto-shrink_800_800/0/1591143186571?e=1616630400&v=beta&t=HIH9MNUD-jzl_4d_FI60PY7PaH0wm5LdlSIVhoqa3kQ",
 					},
 					{
 						bid: 'e4fe9a6b-0fb5-4437-8de0-d84163d8a3bb',
@@ -116,6 +119,7 @@ const initialState = {
 						startTime: '1900',
 						timeDuration: '120',
 						price: '42.00',
+						img: "https://media-exp1.licdn.com/dms/image/C4D03AQFLA1Hf8M-sLA/profile-displayphoto-shrink_800_800/0/1591143186571?e=1616630400&v=beta&t=HIH9MNUD-jzl_4d_FI60PY7PaH0wm5LdlSIVhoqa3kQ",
 					},
 					{
 						bid: 'a84bab82-42a3-4aec-80ba-3aca242b49f8',
@@ -125,6 +129,7 @@ const initialState = {
 						startTime: '1900',
 						timeDuration: '60',
 						price: '21.00',
+						img: "https://media-exp1.licdn.com/dms/image/C4D03AQFLA1Hf8M-sLA/profile-displayphoto-shrink_800_800/0/1591143186571?e=1616630400&v=beta&t=HIH9MNUD-jzl_4d_FI60PY7PaH0wm5LdlSIVhoqa3kQ",
 					},
 				],
 			},

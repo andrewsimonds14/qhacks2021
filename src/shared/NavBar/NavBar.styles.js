@@ -46,4 +46,11 @@ export const NavText = styled.div`
 		css`
 			font-size: 300%;
 		`}
+	${(props) =>
+		props.small &&
+		css`
+			font-size: 150%;
+		`}
 `;
+
+

@@ -14,9 +14,9 @@ const NavBar = (props) => (
             <NavText logo>QuickFit</NavText>
         </TextWrapper>
         <TextWrapper>
-            <NavText>About</NavText>
-            <NavText>Team</NavText>
-            <NavText>Shop</NavText>
+            <NavText small>Become a host</NavText>
+            <NavText small>Sign Up</NavText>
+            <NavText>Login</NavText>
         </TextWrapper>
     </TopBar>
 );

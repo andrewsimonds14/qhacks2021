@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { withTheme } from 'styled-components';
 
 import { NavBar } from '../../shared';
 
 import { Parent } from './landing.styles';
-import flagShipImg from "../../assets/Garage-Gym.jpg"
+import flagShipImg from '../../assets/Garage-Gym.jpg';
 import Routes from '../../router/routes';
 
 class LandingPage extends React.Component {
@@ -14,10 +13,23 @@ class LandingPage extends React.Component {
 		this.state = {};
 	}
 	render() {
+		const navToHostReg = () => {
+			this.props.history.push(Routes.toHostReg());
+		};
+		const navToSignUp = () => {
+			this.props.history.push(Routes.toSignUp());
+		};
+		const navToLogin = () => {
+			this.props.history.push(Routes.toLogin());
+		};
 		return (
 			<Parent>
-				<NavBar />
-				<img src= {flagShipImg} width = "100%" height = "80%" alt ="Garage Gym"/>
+				<NavBar
+					navToHostReg={navToHostReg}
+					navToSignUp={navToSignUp}
+					navToLogin={navToLogin}
+				/>
+				<img src={flagShipImg} width='100%' height='80%' alt='Garage Gym' />
 			</Parent>
 		);
 	}

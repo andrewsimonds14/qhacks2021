@@ -1,13 +1,8 @@
 /* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Redirect,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { LandingPage } from '../views';
+import { LandingPage, SignUpPage } from '../views';
 
 import Routes from './routes';
 
@@ -62,6 +57,7 @@ class RouterApp extends Component {
 			<Router>
 				<Switch>
 					{this.renderPublicRoute(Routes.toLanding(), LandingPage)}
+					{this.renderPublicRoute(Routes.toSignUp(), SignUpPage)}
 				</Switch>
 			</Router>
 		);

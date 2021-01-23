@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
 
-import { NavBar, Footer, Gyms } from '../../../shared';
+import { NavBar, Footer, Bookings } from '../../../shared';
 
 import {
 	Parent,
@@ -49,9 +49,7 @@ class BuddyDashboard extends React.Component {
 					<Title>{`Hey ${this.props.userName}, ready to get fit?`}</Title>
 				</WelcomeMessage>
 				<SubTitle>Upcoming Workouts</SubTitle>
-				<Gyms />
-				<SubTitle>Past Workouts</SubTitle>
-				<Gyms />
+				<Bookings />
 				<SubTitle>Ready to find your next lift?</SubTitle>
 				<ButtonWrapper
 					onClick={() => this.props.history.push(Routes.toBuddySearch())}

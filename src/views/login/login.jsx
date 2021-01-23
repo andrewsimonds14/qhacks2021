@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { withTheme } from 'styled-components';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { AwesomeButton } from 'react-awesome-button';
+import 'react-awesome-button/dist/themes/theme-red.css';
 
-import { NavBar } from '../../shared';
-
-import { Parent } from './login.styles';
-import flagShipImg from "../../assets/Garage-Gym.jpg"
+import {
+	Parent,
+	Title,
+	SignUpContainer,
+	SquatImage,
+	SignUpFormWrapper,
+	SignUpText,
+} from './login.styles';
+import squatMan from '../../assets/squatMan.png';
 import Routes from '../../router/routes';
 
 class LoginPage extends React.Component {
@@ -14,34 +21,86 @@ class LoginPage extends React.Component {
 		this.state = {};
 	}
 	render() {
+		const emailTest = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 		return (
 			<Parent>
-				<form>
+				<Title>Login to your QuickFit Account!</Title>
+				<SignUpContainer>
+					<SquatImage src={squatMan}></SquatImage>
+					<SignUpFormWrapper>
+						<Formik
+							initialValues={{ email: '', password: '' }}
+							validate={(values) => {
+								let errors = {};
+								if (values.email === '') {
+									errors.email = 'Email is required';
+								} else if (!emailTest.test(values.email)) {
+									errors.email = 'Invalid email address format';
+								}
+								if (values.password === '') {
+									errors.password = 'Password is required';
+								} else if (values.password.length < 3) {
+									errors.password = 'Password must be 3 characters at minimum';
+								}
+								return errors;
+							}}
+							onSubmit={({ setSubmitting }) => {
+								alert('Form is validated! Submitting the form...');
+								setSubmitting(false);
+							}}
+						>
+							{({ touched, errors, isSubmitting }) => (
+								<Form>
+									<div className='form-group'>
+										<SignUpText htmlFor='email'>Email</SignUpText>
+										<Field
+											type='email'
+											name='email'
+											placeholder='Enter email'
+											className={`form-control ${
+												touched.email && errors.email ? 'is-invalid' : ''
+											}`}
+										/>
+										<ErrorMessage
+											component='div'
+											name='email'
+											className='invalid-feedback'
+										/>
+									</div>
 
-                    <h3>Log in</h3>
+									<div className='form-group'>
+										<SignUpText htmlFor='password'>Password</SignUpText>
+										<Field
+											type='password'
+											name='password'
+											placeholder='Enter password'
+											className={`form-control ${
+												touched.password && errors.password ? 'is-invalid' : ''
+											}`}
+										/>
+										<ErrorMessage
+											component='div'
+											name='password'
+											className='invalid-feedback'
+										/>
+									</div>
 
-                    <div className="form-group">
-                        <label>Email</label>
-                        <input type="email" className="form-control" placeholder="Enter email" />
-                    </div>
-
-                    <div className="form-group">
-                        <label>Password</label>
-                        <input type="password" className="form-control" placeholder="Enter password" />
-                    </div>
-
-                    <div className="form-group">
-                        <div className="custom-control custom-checkbox">
-                            <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                            <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                        </div>
-                    </div>
-
-                    <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
-                    <p className="forgot-password text-right">
-                        Forgot <a href="#">password?</a>
-                    </p>
-                </form>
+									<AwesomeButton
+										type='primary'
+										className='btn btn-primary btn-block'
+										disabled={isSubmitting}
+										style={{
+											marginTop: '3em',
+											width: '95%',
+										}}
+									>
+										{isSubmitting ? 'Please wait...' : 'Submit'}
+									</AwesomeButton>
+								</Form>
+							)}
+						</Formik>
+					</SignUpFormWrapper>
+				</SignUpContainer>
 			</Parent>
 		);
 	}

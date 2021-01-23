@@ -33,16 +33,16 @@ const NavBar = (props) => (
 					<NavText logo>QuickFit</NavText>
 				</TextWrapper>
 				<TextWrapper>
-					<NavText small onClick={() => props.navToOwnerSignUp()}>
+					<NavText small onClick={() => props.navToDashboard()}>
 						Dashboard
 					</NavText>
-					<NavText small onClick={() => props.navToSignUp()}>
+					<NavText small onClick={() => props.navToSearch()}>
 						Search
 					</NavText>
-					<NavText small onClick={() => props.navToSignUp()}>
+					<NavText small onClick={() => props.navToAccount()}>
 						Account
 					</NavText>
-					<NavText onClick={() => props.navToLogin()}>Logout</NavText>
+					<NavText onClick={() => props.navToLanding()}>Logout</NavText>
 				</TextWrapper>
 			</TopBar>
 		)}

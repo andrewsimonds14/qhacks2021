@@ -1,11 +1,19 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
+import { connect } from 'react-redux';
+import { AwesomeButton } from 'react-awesome-button';
+import 'react-awesome-button/dist/themes/theme-red.css';
 
-import { NavBar, Footer } from '../../shared';
+import { NavBar, Footer, Gyms } from '../../../shared';
 
-import { BackgroundImage, Parent } from './dashboard.styles';
-import flagShipImg from '../../assets/Garage-Gym.png';
-import Routes from '../../router/routes';
+import {
+	Parent,
+	Title,
+	WelcomeMessage,
+	SubTitle,
+	ButtonWrapper,
+} from './dashboard.styles';
+import Routes from '../../../router/routes';
 
 class BuddyDashboard extends React.Component {
 	constructor(props) {
@@ -19,27 +27,46 @@ class BuddyDashboard extends React.Component {
 		const navToAccount = () => {
 			this.props.history.push(Routes.toLogin());
 		};
-		const navToHome = () => {
+		const navToDashboard = () => {
 			this.props.history.push(Routes.toOwnerSignUp());
 		};
 		const navToLanding = () => {
 			this.props.history.push(Routes.toLanding());
 		};
 
+		//Dashboard will have navbar, Welcome {username}, upcoming workouts ,list of past workouts, stats, footer
+
 		return (
 			<Parent>
 				<NavBar
-					default
-					navToOwnerSignUp={navToOwnerSignUp}
-					navToSignUp={navToSignUp}
-					navToLogin={navToLogin}
+					buddyLoggedIn
+					navToSearch={navToSearch}
+					navToAccount={navToAccount}
+					navToDashboard={navToDashboard}
 					navToLanding={navToLanding}
 				/>
-				<BackgroundImage background={flagShipImg} />
-				<Footer landing />
+				<WelcomeMessage>
+					<Title>{`Hey ${this.props.userName}, ready to get fit?`}</Title>
+				</WelcomeMessage>
+				<SubTitle>Upcoming Workouts</SubTitle>
+				<Gyms />
+				<SubTitle>Past Workouts</SubTitle>
+				<Gyms />
+				<SubTitle>Ready to find your next lift?</SubTitle>
+				<ButtonWrapper
+					onClick={() => this.props.history.push(Routes.toBuddySearch())}
+				>
+					<AwesomeButton>Let's go!</AwesomeButton>
+				</ButtonWrapper>
+
+				<Footer />
 			</Parent>
 		);
 	}
 }
 
-export default withTheme(BuddyDashboard);
+const mapStateToProps = (state) => ({
+	userName: state.reducer.userName,
+});
+
+export default connect(mapStateToProps)(withTheme(BuddyDashboard));

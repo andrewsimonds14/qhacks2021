@@ -37,7 +37,7 @@ class OwnerDashboard extends React.Component {
 		return (
 			<Parent>
 				<NavBar
-					buddyLoggedIn
+					ownerLoggedIn
 					navToEditGym={navToEditGym}
 					navToAccount={navToAccount}
 					navToDashboard={navToDashboard}

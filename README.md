@@ -1,8 +1,8 @@
 # QuickFit
+![Logo](/src/assets/QuickFit.jpg)
+
 ## QHacks 2021 Submission
 ### By Andrew Simonds, Michael Kurdyla, and Matthew Tanel
-
-![Logo](/src/assets/QuickFit.jpg)
 
 ## Installation instructions
 - **git clone** the repository
@@ -27,6 +27,8 @@ This project went a lot smoother than we were anticipating. Two of our team memb
 
 ## Accomplishments that we're proud of
 We're most proud of creating a finished product, which sounds super basic, but hear us out. Only one of us had experience with React, and even though the event is Friday to Sunday, we realistically only had about 15 hours to complete the project (life tends to get in the way when it's work from home). As such, we couldn't spend a ton of time trying to learn the basics of the tech stack we were using, and it was more of a hit the ground running sort of weekend. We're very happy with the fact that we were able to build an entire website, create functionality, and demo it all in such a short time, as it really goes to show how far we've come as Hackers and as software developers.
+
+![Map](/src/assets/QuickFitMap.png)
 
 ## What we learned
 We learned a TON this weekend, but I've shortened it to a concise list for your viewing pleasure:

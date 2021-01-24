@@ -2,6 +2,8 @@
 ## QHacks 2021 Submission
 ### By Andrew Simonds, Michael Kurdyla, and Matthew Tanel
 
+![Logo](.\src\assets\QuickFit.jpg)
+
 ## Installation instructions
 - **git clone** the repository
 - In the root directory run **yarn** to install dependencies
@@ -14,6 +16,8 @@ With the current global pandemic, gyms across Canada have been closed to the pub
 
 ## What it does
 QuickFit allows home gym owners to rent out time slots for people to workout in their gym, and allows users to search around their area for a home gym they want to workout in and book times. Similar to Airbnb, QuickFit handles the booking of time slots between users and owners, with an easy to use dashboard for each.
+
+![Login](.\src\assets\QuickFitLogin.png)
 
 ## How we built it
 We built QuickFit with React, Redux, multi-page routing, and pulled in the Google Maps API for searching users local area for home gyms to rent out. We also used styled-components, @material-ui, and Formik to help with the UI components of the project.

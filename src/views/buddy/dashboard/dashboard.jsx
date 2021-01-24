@@ -33,6 +33,7 @@ class BuddyDashboard extends React.Component {
 		const navToLanding = () => {
 			this.props.history.push(Routes.toLanding());
 		};
+		
 
 		return (
 			<Parent>

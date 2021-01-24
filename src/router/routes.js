@@ -12,7 +12,7 @@ const Routes = {
 	//Owner Routes
 	toOwnerDashboard: () => '/ownerDashboard',
 	toEditGym: () => '/editGym',
-	toOwnerAccount: () => '/ownerAccount',
+	toOwnerAccount: () => '/ownerProfile',
 };
 
 export default Routes;

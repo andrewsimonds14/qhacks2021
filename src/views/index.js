@@ -11,4 +11,5 @@ export { default as BuddyProfile } from './buddy/account/account';
 
 //Owner Stuff
 export { default as OwnerDashboard } from './owner/dashboard/dashboard';
+export { default as OwnerProfile } from './owner/account/account';
 

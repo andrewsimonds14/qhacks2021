@@ -1,11 +1,11 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-red.css';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
 import { MapContainer } from '../../../shared';
 import Routes from '../../../router/routes';
+import {
+	SignUpContainer,
+} from './search.styles';
 
 
 
@@ -19,15 +19,22 @@ render() {
   const navToOwner = () => {
     this.props.history.push(Routes.toLanding());
   };
+  const navToDashboard = () => {
+    this.props.history.push(Routes.toBuddyDashboard());
+  };
   return (
-    <div>
-    <h1>HELLO</h1>
-      <MapContainer 
+
+
+<div>
+				<SignUpContainer>
+        <MapContainer 
       navToOwner={navToOwner}
+      navToDashboard={navToDashboard}
       />
-      </div>
-  );
+				</SignUpContainer>
+			</div>
+		);
+	}
 }
 
-}
 export default withTheme(Search);

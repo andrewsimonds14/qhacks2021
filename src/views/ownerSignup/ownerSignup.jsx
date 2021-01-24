@@ -65,9 +65,8 @@ class OwnerSignUpPage extends React.Component {
 								}
 								return errors;
 							}}
-							onSubmit={({ setSubmitting }) => {
-								alert('Form is validated! Submitting the form...');
-								setSubmitting(false);
+							onSubmit={() => {
+								this.props.history.push(Routes.toOwnerDashboard());
 							}}
 						>
 							{({ touched, errors, isSubmitting }) => (

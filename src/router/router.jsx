@@ -7,10 +7,11 @@ import {
 	SignUpPage,
 	LoginPage,
 	OwnerSignUpPage,
-	BookSessions,
 	BuddyDashboard,
 	BuddySearch,
+	BuddyProfile,
 	OwnerDashboard,
+	OwnerProfile
 } from '../views';
 
 import Routes from './routes';
@@ -69,10 +70,11 @@ class RouterApp extends Component {
 					{this.renderPublicRoute(Routes.toLogin(), LoginPage)}
 					{this.renderPublicRoute(Routes.toSignUp(), SignUpPage)}
 					{this.renderPublicRoute(Routes.toOwnerSignUp(), OwnerSignUpPage)}
-					{this.renderPublicRoute(Routes.toBooking(), BookSessions)}
 					{this.renderPublicRoute(Routes.toBuddySearch(), BuddySearch)}
 					{this.renderPublicRoute(Routes.toBuddyDashboard(), BuddyDashboard)}
 					{this.renderPublicRoute(Routes.toOwnerDashboard(), OwnerDashboard)}
+					{this.renderPublicRoute(Routes.toBuddyAccount(), BuddyProfile)}
+					{this.renderPublicRoute(Routes.toOwnerAccount(), OwnerProfile)}
 				</Switch>
 			</Router>
 		);

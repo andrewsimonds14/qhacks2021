@@ -9,7 +9,6 @@ const Routes = {
 	toBuddyDashboard: () => '/buddyDashboard',
 	toBuddySearch: () => '/buddySearch',
 	toBuddyAccount: () => '/buddyAccount',
-	toBooking: () => '/bookSession',
 	//Owner Routes
 	toOwnerDashboard: () => '/ownerDashboard',
 	toEditGym: () => '/editGym',

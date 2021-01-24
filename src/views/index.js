@@ -8,6 +8,8 @@ export { default as OwnerSignUpPage } from './ownerSignup/ownerSignup';
 export { default as BuddyDashboard } from './buddy/dashboard/dashboard';
 export { default as BookSessions } from './buddy/bookSession/bookSession';
 export { default as BuddySearch } from './buddy/search/search';
+export { default as BuddyProfile } from './buddy/account/account';
 
 //Owner Stuff
 export { default as OwnerDashboard } from './owner/dashboard/dashboard';
+

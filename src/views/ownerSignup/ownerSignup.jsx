@@ -86,8 +86,8 @@ class OwnerSignUpPage extends React.Component {
 									<div className='form-group'>
 										<OwnerSignUpText htmlFor='email'>Address</OwnerSignUpText>
 										<Field
-											type='name'
-											name='name'
+											type='address'
+											name='address'
 											placeholder='Street name'
 											className={`form-control ${
 												touched.password && errors.password ? 'is-invalid' : ''
@@ -95,8 +95,8 @@ class OwnerSignUpPage extends React.Component {
 										/>
 										<br />
 										<Field
-											type='name'
-											name='name'
+											type='postal'
+											name='postal'
 											placeholder='Postal Code'
 											className={`form-control ${
 												touched.password && errors.password ? 'is-invalid' : ''
@@ -104,8 +104,8 @@ class OwnerSignUpPage extends React.Component {
 										/>
 										<br />
 										<Field
-											type='name'
-											name='name'
+											type='province'
+											name='province'
 											placeholder='Province'
 											className={`form-control ${
 												touched.password && errors.password ? 'is-invalid' : ''

@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { NavBar, Footer } from '../../../shared/';
 import { Grid } from '@material-ui/core';
 import Buddy from '../../../shared/Cards/buddy';
@@ -40,13 +40,13 @@ class BuddyProfile extends React.Component {
 					navToLanding={navToLanding}
 				/>
 				<WelcomeMessage>
-					<Title>{`Profile`}</Title>
+					<Title>{`Buddy Profile`}</Title>
 				</WelcomeMessage>
-				<Grid container justify="center" spacing={4}>
-                    <Grid item key={this.props.buddy.uid} xs={12} sm={6} md={4} lg={3}>
-                        <Buddy buddy={this.props.buddy} />
-                    </Grid>
-                </Grid>
+				<Grid container justify='center' spacing={4}>
+					<Grid item key={this.props.buddy.uid} xs={12} sm={6} md={4} lg={3}>
+						<Buddy buddy={this.props.buddy} />
+					</Grid>
+				</Grid>
 
 				<Footer />
 			</Parent>
@@ -55,7 +55,7 @@ class BuddyProfile extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-	buddy: state.reducer.userList.buddies[0]
+	buddy: state.reducer.userList.buddies[0],
 });
 
 export default connect(mapStateToProps)(BuddyProfile);

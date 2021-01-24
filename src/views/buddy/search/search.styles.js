@@ -9,10 +9,10 @@ export const Parent = styled.div`
 
 export const SignUpContainer = styled.div`
 	background-color: ${(props) => props.theme.colors.elevatedBackgroundPrimary};
-	height: 1000px;
+	height: 860px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-self: center; //Perpendicular to flex direction
-	padding-top: 7.5em;
+	margin-top: 7.5em;
 `;

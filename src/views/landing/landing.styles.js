@@ -11,7 +11,7 @@ export const BackgroundImage = styled.div`
 	display: block;
 	background-position: center;
 	background-size: cover;
-	height: 1000px;
+	height: 1400px;
 	${(props) =>
 		props.background &&
 		css`
@@ -50,7 +50,7 @@ export const AboutTitle = styled(SubText)`
 	font-weight: ${(props) => props.theme.fonts.weightRegular};
 	font-size: 250%;
 	align-self: center;
-	margin: 3em 1em 1em 1em;
+	margin: 1.5em 1em 1em 1em;
 `;
 
 export const AboutSubTitle = styled(AboutTitle)`

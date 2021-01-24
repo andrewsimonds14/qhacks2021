@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 
+export const Parent = styled.div`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+`;
+
 export const SignUpContainer = styled.div`
 	background-color: ${(props) => props.theme.colors.elevatedBackgroundPrimary};
-	border: 12px solid ${(props) => props.theme.colors.darkRed};
-  height: 1000px;
-  width: 1690px;
+	height: 1000px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-	align-items: speac-evenly; //Perpendicular to flex direction
-	justify-content: flex-start; //Along flex direction
+	align-self: center; //Perpendicular to flex direction
+	padding-top: 7.5em;
 `;

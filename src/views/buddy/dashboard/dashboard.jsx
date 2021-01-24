@@ -47,9 +47,9 @@ class BuddyDashboard extends React.Component {
 					<Title>{`Hey ${this.props.userName}, ready to get fit?`}</Title>
 				</WelcomeMessage>
 				<SubTitle>Upcoming Workouts</SubTitle>
-				<Bookings mclovin />
+				<Bookings />
 				<SubTitle>Past Workouts</SubTitle>
-				<PastBookings mclovin />
+				<PastBookings />
 				<SubTitle>Ready to find your next lift?</SubTitle>
 				<ButtonWrapper
 					onClick={() => this.props.history.push(Routes.toBuddySearch())}
@@ -63,7 +63,7 @@ class BuddyDashboard extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-	userName: state.reducer.userList.buddies[1].name,
+	userName: state.reducer.userList.buddies[0].name,
 });
 
 export default connect(mapStateToProps)(withTheme(BuddyDashboard));

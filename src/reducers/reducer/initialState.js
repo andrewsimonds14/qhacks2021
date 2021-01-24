@@ -17,7 +17,7 @@ const initialState = {
 						timeDuration: 60,
 						price: 21.0,
 						img:
-							'https://www.muscleandfitness.com/wp-content/uploads/2019/02/ronnie-coleman-squat-barbell-1109.jpg?quality=86&strip=all',
+							'https://nextluxury.com/wp-content/uploads/bench-press-garage-gym-ideas.jpg',
 					},
 					{
 						bid: 'e4fe9a6b-0fb5-4437-8de0-d84163d8a3bb',
@@ -28,7 +28,7 @@ const initialState = {
 						timeDuration: 120,
 						price: 42.0,
 						img:
-							'https://www.muscleandfitness.com/wp-content/uploads/2019/02/ronnie-coleman-squat-barbell-1109.jpg?quality=86&strip=all',
+							'https://nextluxury.com/wp-content/uploads/bench-press-garage-gym-ideas.jpg',
 					},
 					{
 						bid: '7a792542-e267-4642-951d-cc587ffc6ee0',
@@ -52,7 +52,7 @@ const initialState = {
 						timeDuration: 60,
 						price: 21.0,
 						img:
-							'https://www.muscleandfitness.com/wp-content/uploads/2019/02/ronnie-coleman-squat-barbell-1109.jpg?quality=86&strip=all',
+							'https://nextluxury.com/wp-content/uploads/bench-press-garage-gym-ideas.jpg',
 					},
 					{
 						bid: '7a792542-e267-4642-951d-cc587ffc6ee0',
@@ -83,7 +83,7 @@ const initialState = {
 						timeDuration: 60,
 						price: 21.0,
 						img:
-							'https://www.muscleandfitness.com/wp-content/uploads/2019/02/ronnie-coleman-squat-barbell-1109.jpg?quality=86&strip=all',
+							'https://nextluxury.com/wp-content/uploads/bench-press-garage-gym-ideas.jpg',
 					},
 					{
 						bid: 'e4fe9a6b-0fb5-4437-8de0-d84163d8a3bb',
@@ -94,7 +94,7 @@ const initialState = {
 						timeDuration: 120,
 						price: 42.0,
 						img:
-							'https://www.muscleandfitness.com/wp-content/uploads/2019/02/ronnie-coleman-squat-barbell-1109.jpg?quality=86&strip=all',
+							'https://nextluxury.com/wp-content/uploads/bench-press-garage-gym-ideas.jpg',
 					},
 					{
 						bid: '7a792542-e267-4642-951d-cc587ffc6ee0',
@@ -140,7 +140,7 @@ const initialState = {
 						timeDuration: 60,
 						price: 21.0,
 						img:
-							'https://www.muscleandfitness.com/wp-content/uploads/2019/02/ronnie-coleman-squat-barbell-1109.jpg?quality=86&strip=all',
+							'https://nextluxury.com/wp-content/uploads/bench-press-garage-gym-ideas.jpg',
 					},
 					{
 						bid: '7a792542-e267-4642-951d-cc587ffc6ee0',
@@ -188,7 +188,7 @@ const initialState = {
 				pricePerHour: '21.00',
 				description: 'Light Weight BABY',
 				img:
-					'https://www.muscleandfitness.com/wp-content/uploads/2019/02/ronnie-coleman-squat-barbell-1109.jpg?quality=86&strip=all',
+					'https://nextluxury.com/wp-content/uploads/bench-press-garage-gym-ideas.jpg',
 				bookings: [
 					{
 						bid: '57ceee7d-71fc-4e20-b42b-8625547193e1',
